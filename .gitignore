@@ -1,0 +1,154 @@
+# ======================================
+# UNITY - IGNORE STANDARD
+# ======================================
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# Crash Reports
+sysinfo.txt
+
+# ======================================
+# ASSETS GENERATED
+# ======================================
+
+# Auto-generated AssetBundles
+/[Aa]sset[Bb]undles/
+
+# Addressable Assets
+/[Aa]sset[Ss]tore/
+/[Aa]sset[Ss]ettings/
+
+# Cache
+/[Cc]ache/
+/[Bb]uild[Cc]ache/
+
+# ======================================
+# UNITY CLOUD / COLLAB
+# ======================================
+
+/.collab/
+/.collabignore
+/UnityPackageManager/
+
+# ======================================
+# VISUAL STUDIO / RIDER / VS CODE
+# ======================================
+
+# Visual Studio
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Rider
+.idea/
+*.iml
+
+# JetBrains cache
+/.idea/
+/*.iml
+
+# ======================================
+# OPERATING SYSTEMS
+# ======================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ======================================
+# PACKAGE MANAGER (Unity)
+# ======================================
+
+/[Pp]ackages/packages-lock.json
+/[Pp]ackages/com.unity.*.tgz
+
+# ======================================
+# VR SPECIFIC
+# ======================================
+
+# Oculus SDK / OpenXR / SteamVR build caches
+/Assets/Oculus/VoiceSDK/Cache/
+/Assets/Oculus/Spatializer/Cache/
+/Assets/Plugins/OpenXR/Generated/
+/Assets/Plugins/SteamVR_*/*
+/Assets/Plugins/x86/
+/Assets/Plugins/x86_64/
+/Assets/Plugins/Android/libs/
+/Assets/Plugins/Android/gradleOut/
+
+# VRChat SDK cache
+/Assets/VRCSDK/
+/Assets/VRChat Examples/
+/Assets/VRLabs/
+/Assets/Udon/
+
+# ======================================
+# BUILD OUTPUTS
+# ======================================
+
+# Windows / macOS / Android builds
+*.apk
+*.aab
+*.ipa
+*.exe
+*.app
+*.x86
+*.x86_64
+*.dll
+*.so
+*.dylib
+
+# WebGL builds
+/Build/WebGL/
+/Builds/WebGL/
+
+# ======================================
+# UNITY META FILES
+# ======================================
+
+# Never ignore .meta (required by Unity)
+!*.meta
+
+# ======================================
+# MISC
+# ======================================
+
+# Logs
+*.log
+
+# Profiling
+*.mem
+*.stackdump
+*.profiler
+*.trace
+
+# Local test data
+/[Tt]est[Rr]esults/
