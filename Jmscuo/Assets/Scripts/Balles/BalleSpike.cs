@@ -7,21 +7,41 @@ public class StickOnGround : MonoBehaviour
     public string groundTag = "Ground";
 
     private Rigidbody rb;
-    private Collider col;
+    private bool isOnGround = false;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        col = GetComponent<Collider>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (isOnGround)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = true;
+        }
+        /*else
+        {
+            isOnGround = false;
+            rb.isKinematic = false;
+        }*/
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag(groundTag))
         {
-            rb.isKinematic = true;
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
+            isOnGround = true;
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(groundTag))
+        {
+            isOnGround = true;
         }
     }
 
@@ -29,6 +49,7 @@ public class StickOnGround : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(groundTag))
         {
+            isOnGround = false;
             rb.isKinematic = false;
         }
     }
