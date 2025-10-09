@@ -8,6 +8,9 @@ public class PrefabSpawner : MonoBehaviour
     [Header("Position de spawn")]
     public Transform spawnPoint;
 
+    [Header("Parent GameObject pour stocker les objets spawné (facultatif)")]
+    public GameObject parentObject;
+
     public void SpawnPrefab(int index)
     {
         if (index < 0 || index >= prefabs.Length)
@@ -28,8 +31,11 @@ public class PrefabSpawner : MonoBehaviour
             return;
         }
 
-        Instantiate(prefabs[index], spawnPoint.position, spawnPoint.rotation);
+        Transform parentTransform = parentObject != null ? parentObject.transform : null;
+
+        GameObject instance = Instantiate(prefabs[index], spawnPoint.position, spawnPoint.rotation, parentTransform);
     }
+
     public void SpawnRandomPrefab()
     {
         if (prefabs == null || prefabs.Length == 0)
@@ -53,7 +59,8 @@ public class PrefabSpawner : MonoBehaviour
             return;
         }
 
-        Instantiate(prefabToSpawn, spawnPoint.position, spawnPoint.rotation);
-        Debug.Log($"Prefab aléatoire spawné : {prefabToSpawn.name}");
+        Transform parentTransform = parentObject != null ? parentObject.transform : null;
+
+        GameObject instance = Instantiate(prefabToSpawn, spawnPoint.position, spawnPoint.rotation, parentTransform);
     }
 }
