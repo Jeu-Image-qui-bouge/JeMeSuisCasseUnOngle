@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 4543433547786742357}
   - component: {fileID: 8882073791936855305}
   - component: {fileID: 2758638934282651808}
+  - component: {fileID: 8081556636369896480}
   m_Layer: 0
   m_Name: Wall Top
   m_TagString: Untagged
@@ -179,6 +180,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8081556636369896480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4902287534814268525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755b018cccf98a449955ee756bf4fed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOnCollision
+  targetTag: Balle
 --- !u!1 &5128285537835928779
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +205,7 @@ GameObject:
   - component: {fileID: 6448880162588165159}
   - component: {fileID: 5988400786037864871}
   - component: {fileID: 6455915841753883368}
+  - component: {fileID: 774571311469202285}
   m_Layer: 0
   m_Name: Wall Left
   m_TagString: Untagged
@@ -290,6 +305,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &774571311469202285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5128285537835928779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755b018cccf98a449955ee756bf4fed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOnCollision
+  targetTag: Balle
 --- !u!1 &5611829410204241437
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +330,7 @@ GameObject:
   - component: {fileID: 8892777558725945284}
   - component: {fileID: 1809677776505744293}
   - component: {fileID: 3648562247703846751}
+  - component: {fileID: 4025427035933418582}
   m_Layer: 0
   m_Name: Wall Bottom
   m_TagString: Untagged
@@ -401,6 +430,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4025427035933418582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611829410204241437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755b018cccf98a449955ee756bf4fed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOnCollision
+  targetTag: Balle
 --- !u!1 &8049676945570725811
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +459,7 @@ GameObject:
   - component: {fileID: 62913728472421038}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -629,6 +671,7 @@ GameObject:
   - component: {fileID: 1559791867391987998}
   - component: {fileID: 2531622417740476845}
   - component: {fileID: 4377104636138407505}
+  - component: {fileID: 1919976719676505101}
   m_Layer: 0
   m_Name: Wall Right
   m_TagString: Untagged
@@ -728,3 +771,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1919976719676505101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8648457073933727557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755b018cccf98a449955ee756bf4fed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOnCollision
+  targetTag: Balle
