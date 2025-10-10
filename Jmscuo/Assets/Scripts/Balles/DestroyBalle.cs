@@ -10,6 +10,15 @@ public class DestroyOnCollision : MonoBehaviour
         if (collision.gameObject.CompareTag(targetTag))
         {
             Destroy(collision.gameObject);
+            Debug.Log("bite");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag(targetTag))
+        {
+            Destroy(other.gameObject);
         }
     }
 }
