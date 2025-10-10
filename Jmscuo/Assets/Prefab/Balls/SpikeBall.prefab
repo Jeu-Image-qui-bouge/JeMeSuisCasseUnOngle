@@ -238,6 +238,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickOnGround
   groundTag: Ground
+  hapticsOnImpact: 1
+  hapticsAmplitude: 0.7
+  hapticsDuration: 0.497
+  hapticsBothHands: 1
 --- !u!1001 &4423188423984012996
 PrefabInstance:
   m_ObjectHideFlags: 0

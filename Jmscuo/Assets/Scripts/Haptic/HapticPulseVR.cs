@@ -27,18 +27,15 @@ public static class HapticPulseVR
         devicesSearched = true;
     }
 
-    /// <summary>Impulse sur la main demandée.</summary>
     public static void Pulse(bool leftHand, float amplitude = 0.6f, float duration = 0.08f)
     {
         EnsureDevices();
         var dev = leftHand ? left : right;
         if (dev.isValid)
         {
-            // OpenXR / XRIT: canal 0
             dev.SendHapticImpulse(0u, Mathf.Clamp01(amplitude), Mathf.Max(0f, duration));
         }
 
-        // Fallback Oculus (si Oculus Integration est importée)
 #if OCULUS_INTEGRATION
         var ctrl = leftHand ? OVRInput.Controller.LTouch : OVRInput.Controller.RTouch;
         OVRInput.SetControllerVibration(1f, Mathf.Clamp01(amplitude), ctrl);
@@ -47,7 +44,6 @@ public static class HapticPulseVR
 #endif
     }
 
-    /// <summary>Impulse sur les deux mains.</summary>
     public static void PulseBoth(float amplitude = 0.6f, float duration = 0.08f)
     {
         EnsureDevices();

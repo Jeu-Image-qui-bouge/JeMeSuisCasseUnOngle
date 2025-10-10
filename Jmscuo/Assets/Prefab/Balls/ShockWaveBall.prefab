@@ -243,16 +243,10 @@ MonoBehaviour:
   groundTag: Ground
   targetTag: Balle
   affectAll: 0
-  shockwaveVfxPrefab: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
-  shockwaveSfx: {fileID: 0}
-  sfxVolume: 0.9
-  spawnAtContactPoint: 1
-  alignToNormal: 1
-  vfxLifetime: 4
-  lightFlash: 1
-  lightRange: 6
-  lightIntensity: 8
-  lightFade: 0.08
+  hapticsOnImpact: 1
+  hapticsAmplitude: 1
+  hapticsDuration: 0.137
+  hapticsBothHands: 1
   destroyDelay: 0.1
   showGizmos: 1
 --- !u!1001 &4268554071473710481
