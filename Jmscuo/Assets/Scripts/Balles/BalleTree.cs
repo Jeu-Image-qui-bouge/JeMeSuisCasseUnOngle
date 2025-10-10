@@ -8,12 +8,6 @@ public class GrowAfterLaunch : MonoBehaviour
     public float growDelay = 1f; 
     public float growDuration = 2f;
 
-    [Header("Haptique")]
-    public bool hapticsOnImpact = true;
-    [Range(0f, 1f)] public float hapticsAmplitude = 0.7f;
-    [Range(0f, 1f)] public float hapticsDuration = 0.12f;
-    public bool hapticsBothHands = true;
-
     private Vector3 initialScale;
     private Vector3 targetScale;
     private float growTimer = 0f;
@@ -41,11 +35,6 @@ public class GrowAfterLaunch : MonoBehaviour
         }
         else
         {
-            if (hapticsOnImpact)
-            {
-                if (hapticsBothHands) HapticPulseVR.PulseBoth(hapticsAmplitude, hapticsDuration);
-                else HapticPulseVR.Pulse(false, hapticsAmplitude, hapticsDuration); // false = main droite (Right)
-            }
 
             growTimer += Time.deltaTime;
 
