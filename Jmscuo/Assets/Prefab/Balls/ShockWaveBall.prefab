@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3146838867985015011}
   - component: {fileID: 6824152033549748485}
   - component: {fileID: -7957767709640086862}
+  - component: {fileID: 6150207496823184799}
   m_Layer: 0
   m_Name: ShockWaveBall
   m_TagString: NewBalle
@@ -243,18 +244,31 @@ MonoBehaviour:
   groundTag: Ground
   targetTag: Balle
   affectAll: 0
-  shockwaveVfxPrefab: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
-  shockwaveSfx: {fileID: 0}
-  sfxVolume: 0.9
-  spawnAtContactPoint: 1
-  alignToNormal: 1
-  vfxLifetime: 4
-  lightFlash: 1
-  lightRange: 6
-  lightIntensity: 8
-  lightFade: 0.08
+  hapticsOnImpact: 1
+  hapticsAmplitude: 0.7
+  hapticsDuration: 0.12
+  hapticsBothHands: 1
   destroyDelay: 0.1
   showGizmos: 1
+--- !u!114 &6150207496823184799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932962157980376994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a41a3ffb7f5814bbd132130cdf812c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnVfxOnCollision
+  vfxPrefab: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+  spawnAtContactPoint: 1
+  alignToNormal: 1
+  scaleFromRadius: 0
+  vfxLifetime: 0
+  requiredOtherTag: Ground
+  oneShot: 1
 --- !u!1001 &4268554071473710481
 PrefabInstance:
   m_ObjectHideFlags: 0

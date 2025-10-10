@@ -21,7 +21,6 @@ public class FollowClosestBallCanvas : MonoBehaviour
     {
         if (canvasUI == null)
         {
-            Debug.LogWarning("[FollowClosestBallCanvas] Aucun Canvas assigné ! L'UI ne sera pas déplacée.");
             return;
         }
 
