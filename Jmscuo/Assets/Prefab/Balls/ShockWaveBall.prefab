@@ -245,8 +245,8 @@ MonoBehaviour:
   targetTag: Balle
   affectAll: 0
   hapticsOnImpact: 1
-  hapticsAmplitude: 0.7
-  hapticsDuration: 0.12
+  hapticsAmplitude: 1
+  hapticsDuration: 0.137
   hapticsBothHands: 1
   destroyDelay: 0.1
   showGizmos: 1

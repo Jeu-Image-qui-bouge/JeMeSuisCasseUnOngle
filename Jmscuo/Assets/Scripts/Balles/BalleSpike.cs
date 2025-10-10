@@ -6,6 +6,12 @@ public class StickOnGround : MonoBehaviour
     [Header("Tag du sol")]
     public string groundTag = "Ground";
 
+    [Header("Haptique")]
+    public bool hapticsOnImpact = true;
+    [Range(0f, 1f)] public float hapticsAmplitude = 0.7f;
+    [Range(0f, 1f)] public float hapticsDuration = 0.12f;
+    public bool hapticsBothHands = true;
+
     private Rigidbody rb;
     private bool isOnGround = false;
 
@@ -34,6 +40,12 @@ public class StickOnGround : MonoBehaviour
         if (collision.gameObject.CompareTag(groundTag))
         {
             isOnGround = true;
+        }
+
+        if (hapticsOnImpact)
+        {
+            if (hapticsBothHands) HapticPulseVR.PulseBoth(hapticsAmplitude, hapticsDuration);
+            else HapticPulseVR.Pulse(false, hapticsAmplitude, hapticsDuration); // false = main droite (Right)
         }
     }
 

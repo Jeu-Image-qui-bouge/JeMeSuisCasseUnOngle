@@ -4545,7 +4545,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 932962157980376994, guid: 39c75d205c4b6684b8f2c345f3ee5997, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2139449896}
   m_SourcePrefab: {fileID: 100100000, guid: 39c75d205c4b6684b8f2c345f3ee5997, type: 3}
 --- !u!1 &1063318926
 GameObject:
@@ -8340,6 +8343,30 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3667051746007278424, guid: 7bbb1960bab3e75459304488d8d1ffba, type: 3}
   m_PrefabInstance: {fileID: 2053683842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2139449889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 932962157980376994, guid: 39c75d205c4b6684b8f2c345f3ee5997, type: 3}
+  m_PrefabInstance: {fileID: 815701916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2139449896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139449889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a41a3ffb7f5814bbd132130cdf812c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnVfxOnCollision
+  vfxPrefab: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+  spawnAtContactPoint: 1
+  alignToNormal: 1
+  scaleFromRadius: 0
+  vfxLifetime: 0
+  requiredOtherTag: Ground
+  oneShot: 1
 --- !u!1001 &1298922207729022441
 PrefabInstance:
   m_ObjectHideFlags: 0

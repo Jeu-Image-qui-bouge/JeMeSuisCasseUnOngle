@@ -240,6 +240,10 @@ MonoBehaviour:
   targetScaleMultiplier: 3
   growDelay: 1
   growDuration: 2
+  hapticsOnImpact: 1
+  hapticsAmplitude: 0.788
+  hapticsDuration: 0.288
+  hapticsBothHands: 1
 --- !u!1001 &2221940675300820323
 PrefabInstance:
   m_ObjectHideFlags: 0
