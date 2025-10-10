@@ -238,8 +238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56703c44bec50d1449ce278d0b08dfcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShockwaveOnCollision
-  radius: 1
-  force: 2
+  radius: 2
+  force: 3
   forceMode: 1
   groundTag: Ground
   targetTag: Balle
