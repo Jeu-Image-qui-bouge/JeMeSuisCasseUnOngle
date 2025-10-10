@@ -4842,8 +4842,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e4f85b2e68822a041b8df56db88fbd27, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9739,8 +9739,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e4f85b2e68822a041b8df56db88fbd27, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14426,8 +14426,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c4934188b933304409ce48e07d589342, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19234,8 +19234,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0f995b3145e0e7247a42da6cef1dbf23, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24090,7 +24090,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cd8002f70c22e4840bffd510c84d3c10, type: 2}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24169,7 +24169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e76550e5ec79542856faacf274677d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VFXOnBothOptics
-  xrSafeParticleMaterial: {fileID: 0}
+  xrSafeParticleMaterial: {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
   forceGpuInstancing: 1
   applyOnStart: 1
   debugLog: 1
@@ -28966,8 +28966,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e0d80b657ecab7c4b9ce24628b2dc682, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33912,8 +33912,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c4934188b933304409ce48e07d589342, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
+  - {fileID: 2100000, guid: 16046a82583013e449c59de7f532092f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
